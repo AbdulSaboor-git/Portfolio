@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio(Abdul Saboor)</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+            </div>
+            <button class="nav-btn home-nav" onclick="goto_home()">Home</button>
+            <button class="nav-btn qualification-nav" onclick="goto_qualification()">Qualification</button>
+            <button class="nav-btn skills-nav" onclick="goto_skills()">Skills</button>
+            <button class="nav-btn projects-nav" onclick="goto_projects()">Projects</button>
+            <button class="nav-btn contact-nav" onclick="goto_contact()">Contact</button>
+        </div>
+    </div>
+    <div class="contact_slider">
+        <div class="end_strip"></div>
+        <div class="card">
+            <div class="card_image_div"><img src="/resources/abdsab.jpg" alt="">
+            </div>
+            <div class="card_text_div_1">
+
+            </div>
+            <div class="card_text_div_2">
+
+            </div>
+        </div>
+        <button class="slider_btn" onclick="move_contact_slider()"></button>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <div id="home" class="home_div">
+        <div class="name_div">
+            <h1 class="name">
+                <b style="color: antiquewhite;">Abdul</b> Saboor
+            </h1>
+            <hr class="styled-line">
+            <h3 class="sub_heading"> Software Developer</h3>
+            <hr class="styled-line">
+        </div>
+
+        <div class="image_div">
+            <img src="/resources/pp.png" alt="">
+        </div>
+
+        <div class="intro_div">
+            <h4>About Me</h4>
+            <p>
+                I am a dedicated developer with a strong passion for creating innovative and user-friendly experiences.
+                Committed to continuous learning and professional growth, I eagerly embrace new challenges and
+                contribute my
+                skills to impactful projects. Staying current with the latest advancements in technology is my
+                top
+                priority, ensuring I integrate cutting-edge solutions into my work. </p>
+            <hr class="styled-line-glow">
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+    <div id="qualification" class="content_div">
+        <h1 class="div_heading">Qualification</h1>
+        <h3 class="heading1">Education</h3>
+        <div class="education_grid">
+            <div class="section">
+                <h3>BS (Hons.) Computer Science</h3>
+                <h5>Governmment College University, Lahore</h5>
+                <p>2022 - 2026</p>
+            </div>
+            <div class="section sec2"></div>
+            <div class="section"></div>
+            <div class="section sec2">
+                <h3>Intermediate</h3>
+                <h5>Governmment Islamia College Civil Lines, Lahore</h5>
+                <p>2019 - 2021</p>
+            </div>
+        </div>
+
+        <h3 class="heading1">Experience</h3>
+        <div class="experience_grid">
+            <div class="section">
+                <h3>Front End Web Development</h3>
+                <h5>Free Lancing</h5>
+                <p>2023 - present</p>
+            </div>
+            <div class="section sec2"></div>
+            <div class="section "></div>
+            <div class="section sec2">
+                <h3>Mobile App Development</h3>
+                <h5>Remote Work</h5>
+                <p>2024 - present</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+
+    <div id="skills" class="content_div">
+        <h1 class="div_heading">Skills</h1>
+        <p>I'm experienced in a variety of programming languages and frameworks. <br> Here are some of my top skills.
+        </p>
+        <div class="skills_grid">
+            <div class="section">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li><i class='bx bxl-c-plus-plus' style='color:#00599C'></i> C++</li>
+                    <li><i class='bx bxl-java' style='color:#f3d9b2'></i> Java</li>
+                    <li><i class='bx bxl-html5' style='color:#E34F26'></i> HTML / CSS</li>
+                    <li><i class='bx bxl-javascript' style='color:#F0DB4F'></i> JavaScript</li>
+                    <li><i class='bx bx-diamond' style='color:#93c7e8'></i> Ruby</li>
+                    <li><i class='bx bx-dice-1' style='color:#0175C2'></i> Dart</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h4>Frameworks</h4>
+                <ul>
+                    <li><i class='bx bxl-react' style='color:#61DAFB'></i> React</li>
+                    <li><i class='bx bxl-react' style='color:#61DAFB'></i> React Native</li>
+                    <li><i class='bx bxl-flutter' style='color:#61DAFB'></i> Flutter</li>
+                    <li><i class='bx bx-diamond' style='color:#93c7e8'></i> Ruby on Rails</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h4>Databases</h4>
+                <ul>
+                    <li><i class='bx bx-coin-stack' style='color:#a8af63'></i> MsSQL</li>
+                    <li><i class='bx bx-coin-stack' style='color:#a8af63'></i> MySQL</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h4>Tools</h4>
+                <ul>
+                    <li><i class='bx bxl-git' style='color:#70f77d'></i> Git</li>
+                    <li><i class='bx bxl-visual-studio' style='color:#b076a8'></i> Visual Studio</li>
+                    <li><i class='bx bxl-visual-studio' style='color:#007ACC'></i> Visual Studio Code</li>
+                    <li><i class='bx bx-coin-stack' style='color:#a8af63'></i> BBMS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+
+    <div id="projects" class="content_div">
+        <h1 class="div_heading">Projects</h1>
+        <h3 class="heading1">Projects:</h3>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////////////////// -->
+
+
+    <div id="contact" class="content_div">
+        <h1 class="div_heading">Contact ME</h1>
+        <h3 class="heading1">Contact:</h3>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    document.querySelector('.home-nav').classList.add('is-focused');
+    handleElementVisibility();
+
+</script>
