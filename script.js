@@ -98,3 +98,18 @@ function handleElementVisibility() {
 window.addEventListener('scroll', function () {
     handleElementVisibility();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.see-more').forEach(button => {
+        button.addEventListener('click', () => {
+            const moreText = button.previousElementSibling;
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline";
+                button.innerText = "See less";
+            } else {
+                moreText.style.display = "none";
+                button.innerText = " . . See more";
+            }
+        });
+    });
+});
