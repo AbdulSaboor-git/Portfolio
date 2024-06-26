@@ -12,6 +12,9 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 button, a {
@@ -472,7 +475,7 @@ a {
     position: relative;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 40px;
+    gap: 30px;
 }
 
 .proj_description {
@@ -497,6 +500,7 @@ a {
     text-align: left;
     border: solid 1px #252608;
     box-shadow: 0px 8px 10px -8px #e5ec8a;
+    margin: 0px;
 }
 
 .proj_item::before {
