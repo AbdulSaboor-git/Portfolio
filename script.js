@@ -1,16 +1,9 @@
-var slider_visible = false;
 
 
 function move_contact_slider() {
     var card = document.querySelector('.contact_slider');
-    if (!slider_visible) {
-        card.classList.add('show');
-        slider_visible = true;
-    }
-    else {
-        card.classList.remove('show');
-        slider_visible = false;
-    }
+    card.classList.toggle('show');
+
 }
 
 function setHashValue(hashValue) {
@@ -95,11 +88,43 @@ function handleElementVisibility() {
     }
 }
 
-window.addEventListener('scroll', function () {
-    handleElementVisibility();
-});
+function toggle_nav() {
+    var nav = document.querySelector('.nav');
+    if (nav.classList.contains('show')) {
+        hideNav();
+    }
+    else {
+        showNav();
+    }
+
+}
+
+function hideNav() {
+    document.querySelector('.nav').classList.remove('show');
+    document.querySelector('.nav-toggle').classList.remove('open');
+}
+
+
+function showNav() {
+    document.querySelector('.nav').classList.add('show');
+    document.querySelector('.nav-toggle').classList.add('open');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('scroll', function () {
+        handleElementVisibility();
+    });
+
+
+    document.addEventListener('click', function (event) {
+        var nav = document.querySelector('.nav');
+        var button = event.target.closest('.nav-toggle');
+
+        if (!nav.contains(event.target) && !button) {
+            hideNav();
+        }
+    });
+
     document.querySelectorAll('.see-more').forEach(button => {
         button.addEventListener('click', () => {
             const moreText = button.previousElementSibling;

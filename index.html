@@ -11,15 +11,23 @@
 </head>
 
 <body>
+    <div class="nav-toggle" onclick="toggle_nav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     <div class="header">
         <div class="nav">
-            <div class="logo">
-            </div>
-            <button class="nav-btn home-nav" onclick="goto_home()">Home</button>
-            <button class="nav-btn qualification-nav" onclick="goto_qualification()">Qualification</button>
-            <button class="nav-btn skills-nav" onclick="goto_skills()">Skills</button>
-            <button class="nav-btn projects-nav" onclick="goto_projects()">Projects</button>
-            <button class="nav-btn contact-nav" onclick="goto_contact()">Contact</button>
+            <button class="nav-btn home-nav" onclick="goto_home()"><span class="bx bx-home"></span> Home</button>
+            <button class="nav-btn qualification-nav" onclick="goto_qualification()"><span
+                    class="bx bxs-graduation"></span>
+                Qualification</button>
+            <button class="nav-btn skills-nav" onclick="goto_skills()"><span class="bx bxs-magic-wand"></span>
+                Skills</button>
+            <button class="nav-btn projects-nav" onclick="goto_projects()"><span class="bx bx-building"></span>
+                Projects</button>
+            <button class="nav-btn contact-nav" onclick="goto_contact()"><span class="bx bxs-contact"></span>
+                Contact</button>
         </div>
     </div>
     <div class="contact_slider">
