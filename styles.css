@@ -510,11 +510,11 @@ a {
 .proj_item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, #00000000, #000000ae, #000000);
+  background: linear-gradient(to bottom, #00000000, #0000009a, #000000);
   z-index: 0;
   border-radius: 23px;
 }
@@ -525,6 +525,7 @@ a {
   margin-right: 20px;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 1;
+  text-shadow: #000013 0px 0px 5px;
 }
 
 .proj_item h3 {
